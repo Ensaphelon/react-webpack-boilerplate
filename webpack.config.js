@@ -19,6 +19,14 @@ module.exports = {
           "eslint-loader"
         ],
       },
+      {
+        test: /\.(svg|png|jpg|gif|ttf|eot|woff|woff2)$/,
+        use: [
+          {
+            loader: 'file-loader'
+          }
+        ]
+      }
     ],
   },
   plugins: [
