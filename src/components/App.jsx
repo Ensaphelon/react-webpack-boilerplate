@@ -1,7 +1,9 @@
 import React from 'react';
 
-export default () => (
+const App = () => (
   <div className="app">
     Application root
   </div>
 );
+
+export default App;
