@@ -12,3 +12,6 @@ lint:
 
 test:
 	npm run test
+
+test-dev:
+	npm run test -- --watchAll
