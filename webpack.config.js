@@ -16,14 +16,18 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           "babel-loader",
-          "eslint-loader",
+          "eslint-loader"
         ],
       },
     ],
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: `${__dirname}/src/index.html`
     })
-  ]
+  ],
+  devServer: {
+    hot: true
+  }
 };
