@@ -2,13 +2,17 @@
 
 ## Installation
 
-* npm install
+* npm install | make install
 
 ## Run development server
 
-* npm start
+* npm start | make start
 * visit `http://localhost:8080/`
 
 ## Build
 
-* npm run build
+* npm run build | make build
+
+## Lint
+
+* npm run eslint | make lint
