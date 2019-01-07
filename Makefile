@@ -10,8 +10,11 @@ build:
 lint:
 	npm run eslint
 
+prettier:
+	npm run prettier
+
 test:
-	npm run test
+	npm run cypress
 
 test-dev:
 	npm run test -- --watchAll
