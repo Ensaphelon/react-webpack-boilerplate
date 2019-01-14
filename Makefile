@@ -17,4 +17,4 @@ test:
 	npm run cypress
 
 test-dev:
-	npm run test -- --watchAll
+	npm run cypress-dev

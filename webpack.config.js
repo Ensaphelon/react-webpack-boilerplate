@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+var path = require('path')
 
 module.exports = {
   mode: process.env.NODE_ENV || 'development',
@@ -8,6 +9,7 @@ module.exports = {
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
+    modules: [path.resolve(__dirname, "src"), "node_modules"]
   },
   module: {
     rules: [
